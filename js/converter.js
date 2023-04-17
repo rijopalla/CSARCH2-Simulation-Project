@@ -216,7 +216,7 @@ $(document).ready(function () {
                 let hexDigit = parseInt(nibble, 2).toString(16);
                 
                 hex += hexDigit;
-                if((i + 1) % 4 == 0) hex += " "
+                if((i + 4) % 16 == 0 && i != bits.length - 4) hex += " "
             }
 
             return '0x' + hex;
