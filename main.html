@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>IEEE-754 Binary-64 floating-point converter (including all special cases)</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="js/converter.js"></script>
+    </head>
+    <body>
+        <div class="whole-area">
+            <!--Header-->
+            <div class="header">
+                <h1>IEEE-754 Binary-64 floating-point converter (including all special cases)</h1>
+            </div>
+
+
+            <div class="area">
+                <!--INPUT-->
+                <div class="area-input">
+                    <div class="input-section">
+                        <div class="input-section-mantissa">
+                            <input type="text" id="mantissa-input" placeholder="Mantissa" value="100.0011">
+                        </div>
+                        <p id="display2">x</p>
+                        <div class="input-section-displayof2">
+                            <select name="base" id="base">
+                                <option value="2">2</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+                        <div class="input-section-exponent">
+                            <input type="text" id="exponent-input" placeholder="Exponent" value="15">
+                        </div>
+                    </div>
+                    <div class="input-error">
+                        <p id="input-error-text">Error</p>
+                    </div>
+                    <div class="input-enter">
+                        <button id="submit-input">Convert</button>
+                    </div>
+                </div>
+
+                <!--OUTPUT-->
+                <div class="area-output">
+                    <div class="output-binary">
+                        <p id="output-binary-copied">Copied to clipboard!</p>
+                        <p id="output-binary-text">111010100011</p>
+                        <button id="copy-binary">Copy Binary</button>
+                    </div>
+                    <div class="output-hex">
+                        <p id="output-hex-copied">Copied to clipboard!</p>
+                        <p id="output-hex-text">F381E7BA8A</p>
+                        <button id="copy-hex">Copy Hex</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--Footer-->
+            <div class="footer">  
+                <h2>Front End: Jon Llamado</h2>
+                <h2>Back End: Calvin Coronado & Rijan Opalla</h2>
+            </div>
+        </div>
+        
+    </body>
+</html>

@@ -1,0 +1,142 @@
+body{
+    margin-left: 30%;
+    margin-right: 30%;
+    background-color: A9907E;
+    display:flex;
+    align-items: center;
+}
+
+.whole-area{
+    background-color: F3DEBA;
+    display:flex; 
+    flex-direction:column;
+    margin-bottom: 15%;
+    border-radius: 30px;
+}
+
+.header{
+    /* border: 1px solid black; */
+    margin: 1%;
+    padding: 1%;
+    font-size: 18px;
+    font-family: 'Catamaran', sans-serif;
+    min-height:50px;
+}
+
+h1{
+    font-weight: 600;
+}
+
+.area{
+    padding: 1%;
+    font-size: 15px;
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 500;
+    flex:1;
+    min-height: 50vh;
+}
+
+.area-input{
+    padding: 1%;
+    margin-bottom: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.area-input > * > *{
+    font-size: 18;
+}
+
+.input-section {
+    display: flex;
+    align-items: center;
+}
+
+.input-section > *{
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+#display2{
+    font-size: 20px;
+}
+
+.input-error{
+    visibility: hidden;
+}
+
+#input-error-text{
+    color: ff0100;
+}
+
+.area-output{
+    padding: 1%;
+    visibility: hidden;
+}
+
+.area-output > *{
+    margin: 5%;
+    margin-bottom: 2%;
+}
+
+.output-binary{
+    margin-bottom: 2%;
+}
+
+.area-output > * > *{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+#output-binary-copied{
+    color:gray;
+    visibility: hidden;
+}
+
+#output-hex-copied{
+    color:gray;
+    visibility: hidden;
+}
+
+.footer{
+    /*border: 1px solid black; */
+    margin: 1%;
+    padding: 1%;
+}
+
+h2{
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Catamaran', sans-serif;
+}
+
+select{
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Catamaran', sans-serif;
+    border-radius: 5px;
+    border-color: transparent;
+}
+
+button{
+    font-size: 14px;
+    font-weight: 500;
+    border-color: transparent;
+    border-radius: 5px;
+    font-family: 'Catamaran', sans-serif;
+    background-color: ABC4AA;
+    transition-duration: 0.2s;
+}
+
+button:hover {
+    background-color: #e9f7e9; /* Green */
+    cursor:pointer;
+}
+
+input{
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Catamaran', sans-serif;
+    border-radius: 5px;
+    border-color: transparent;
+}
